@@ -1,7 +1,7 @@
 {% set name = "dpath" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.2" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "89fbec229d941e622ba4e9578a79e05f8e0b9efdfe40ffbf4e670a129ec54d6d" %}
+{% set hash_value = "0f635f49e88843a4a519aca1c599faee271730f818a81860827e7d7b4d40273f" %}
 
 package:
   name: '{{ name|lower }}'
@@ -12,7 +12,7 @@ source:
   {{ hash_type }}: '{{ hash_value }}'
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install
 
 requirements:
