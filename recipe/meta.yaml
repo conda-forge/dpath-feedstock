@@ -1,7 +1,5 @@
 {% set name = "dpath" %}
 {% set version = "1.4.2" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "0f635f49e88843a4a519aca1c599faee271730f818a81860827e7d7b4d40273f" %}
 
 package:
   name: '{{ name|lower }}'
@@ -9,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: '{{ hash_value }}'
+  sha256: '0f635f49e88843a4a519aca1c599faee271730f818a81860827e7d7b4d40273f'
 
 build:
-  number: 1001
-  script: python setup.py install
+  number: 1002
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
