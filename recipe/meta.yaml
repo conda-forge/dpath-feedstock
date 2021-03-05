@@ -1,16 +1,16 @@
 {% set name = "dpath" %}
-{% set version = "1.4.2" %}
+{% set version = "2.0.1" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: '0f635f49e88843a4a519aca1c599faee271730f818a81860827e7d7b4d40273f'
+  sha256: bea06b5f4ff620a28dfc9848cf4d6b2bfeed34238edeb8ebe815c433b54eb1fa
 
 build:
-  number: 1003
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
