@@ -1,11 +1,11 @@
-About dpath
-===========
+About dpath-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dpath-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.github.com/akesterson/dpath-python
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dpath-feedstock/blob/main/LICENSE.txt)
 
 Summary: Filesystem-like pathing and searching for dictionaries
 

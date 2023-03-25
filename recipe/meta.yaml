@@ -1,5 +1,5 @@
 {% set name = "dpath" %}
-{% set version = "2.1.4" %}
+{% set version = "2.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3380a77d0db4abf104125860ff6eb4bd07c97c65b81aad42a609717089a1bed0
+  sha256: ccd964db839baad4aa820612b4b8731b09f40a245d401b723156ce4ef45b22b7
 
 build:
   number: 0
