@@ -1,5 +1,5 @@
 {% set name = "dpath" %}
-{% set version = "2.1.5" %}
+{% set version = "2.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ccd964db839baad4aa820612b4b8731b09f40a245d401b723156ce4ef45b22b7
+  sha256: f1e07c72e8605c6a9e80b64bc8f42714de08a789c7de417e49c3f87a19692e47
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
