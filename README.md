@@ -157,4 +157,5 @@ Feedstock Maintainers
 * [@asford](https://github.com/asford/)
 * [@efiop](https://github.com/efiop/)
 * [@matthieujung](https://github.com/matthieujung/)
+* [@xhochy](https://github.com/xhochy/)
 
